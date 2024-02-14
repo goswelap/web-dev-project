@@ -1,0 +1,16 @@
+.poll-card-link {
+    font-size: 1.35rem;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.list-group-item {
+    font-size: 1.2rem;
+}
+
+.user-voted {
+    background-color: #a7970f;
+    font-weight: bold;
+}
+

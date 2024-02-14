@@ -1,0 +1,79 @@
+a { text-decoration: none; }
+a:link { color:black; }
+a:visited { color: black; }
+a:hover { color: red; text-decoration: none; }
+
+#text { font-size: 1.35rem }
+a, h1, button, div { font-family: "Goudy Old Style", serif; font-size: 1.9rem }
+.header-banner > a, li { font-size: 1.35rem }
+.user-info > span, .user-info > a { font-size: 1.2rem }
+h1 { font-family: "Goudy Old Style", serif; font-size: 3rem; color: black; }
+.panel-heading { font-size: 2rem }
+
+div { font-size: 1.2rem }
+
+#dashboard-link {
+    float: left;
+}
+
+body {
+    background-color: rgba(29, 29, 29, 0.95);
+    color: #9ca3af;
+    margin: 0;
+}
+
+h2, h3, p { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+h2, p { color: #9ca3af; }
+h3 { color: black; }
+
+label { margin: 0; }
+
+.badge-style { color: black; background-color: #d2b48c; font-size: 1.1rem;} /* vote count badges, result page */
+
+.btn-auth, .btn-auth:visited, .btn-auth:link { color: #9ca3af; } /* sign in & register buttons */
+.btn-auth { text-decoration: underline; }
+
+/*  first shadow moves up and left, second moves up and right, third moves down and left, fourth moves down and right */
+.btn, .btn-style, .btn-scary {
+    letter-spacing: .08em;
+    font-size: 1.35rem;
+    color: rgb(156, 163, 175);
+    background-color: #a7970f;
+    border-color: black;
+
+    /* transition: color .2s ease-in-out 0s, text-shadow .3s ease-in-out 0s; */
+    transition-duration: 0.2s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+    transition-property: color, text-shadow;
+}
+.btn:hover, .btn-style:hover, .btn-scary:hover { color: black; text-decoration: none; }
+
+.btn-style { text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+.btn-style:hover { text-shadow: none; }
+
+.btn-scary { background-color: rgb(185, 0, 0); line-height: 1;}
+.btn-scary:hover { background-color: rgb(185, 0, 0); }
+
+/* this is from my 343 project, i didn't use it in here, but it is a work of art */
+.glow { animation: glow 3s infinite; }
+@keyframes glow {
+    0%,100% {box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);}
+    10%,90% {box-shadow: 0 0 12px rgba(211, 174, 54, 0.3);}
+    20%,80% {box-shadow: 0 0 14px rgba(210, 173, 53, 0.4);}
+    30%,70% {box-shadow: 0 0 16px rgba(209, 172, 52, 0.5);}
+    40%,60% {box-shadow: 0 0 18px rgba(208, 171, 51, 0.6);}
+    50% {box-shadow: 0 0 20px rgba(207, 170, 50, 0.7);}
+}
+
+li {
+    /* display: inline-block; */
+    border-radius: 0.5rem;
+    color: #222222;
+    line-height: 1;
+}
+
+.list {
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
